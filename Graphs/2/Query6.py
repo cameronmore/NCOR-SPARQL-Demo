@@ -3,19 +3,17 @@ from rdflib import Graph
 
 g = Graph()
 
-g.parse("Graphs/1/Foaf-Graph.ttl")
+g.parse("Graphs/2/Foaf-Graph.ttl")
 
 
-
+# This query shows us how to use the "FILTER" keyword
 q = """
 PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
-CONSTRUCT {
-    ?p3 foaf:knows ?p1 .
-    
-}
+SELECT ?p
 WHERE {
-    ?p1 foaf:knows ?p2 .
-    ?p2 foaf:knows ?p3 .
+    ?p foaf:age ?value .
+    FILTER EXISTS { ?p foaf:knows foaf:Stewart }
+
 }
 """
 
@@ -23,7 +21,7 @@ results = g.query(q)
 print("\n",'\n','\n',"\n",'\n','\n',"RESULTS:")
 # g2 = Graph()
 for row in results:
-    g.add((row))
-print(g.serialize(format="ttl"))
+    print(str(row[0]))
+print("\n","\n","\n")
 
 
