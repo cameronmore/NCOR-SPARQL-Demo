@@ -1,0 +1,14 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <http://xmlns.com/foaf/0.1/> .
+
+:Samuel :age 31 .
+:Samuel :knows :Ron .
+
+:Ron :birthday "December 1, 1995" .
+:Ron foaf:mbox <mailto:Ron@example.com> .
+:Ron :knows :Sally .
+
+:Sally :birthday "December 1, 1995" .
+:Sally :knows :Stewart .
+
+:Stewart foaf:lastName "McDonald" .

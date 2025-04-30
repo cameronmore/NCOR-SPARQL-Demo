@@ -1,0 +1,15 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <http://xmlns.com/foaf/0.1/> .
+
+:Stewart :age 30 .
+
+:Jack :age 29 .
+:Jack :knows :Stewart .
+
+:Alice :age 31 .
+:Alice :knows :Stewart .
+
+:Peter :knows :Stewart .
+:Peter :age 22 .
+
+:Stan :knows :Stewart .
