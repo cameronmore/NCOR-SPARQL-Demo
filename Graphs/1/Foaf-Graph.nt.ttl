@@ -1,0 +1,7 @@
+
+<http://xmlns.com/foaf/0.1/Barry> <http://xmlns.com/foaf/0.1/knows> <http://xmlns.com/foaf/0.1/Bill> .
+
+<http://xmlns.com/foaf/0.1/John> <http://xmlns.com/foaf/0.1/knows> <http://xmlns.com/foaf/0.1/Jenny> .
+
+<http://xmlns.com/foaf/0.1/Jenny> <http://xmlns.com/foaf/0.1/knows> <http://xmlns.com/foaf/0.1/Bill> .
+
